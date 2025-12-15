@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games - MyWebsite</title>
+    <title>Number Guessing Game - Peliluola</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
                 <div class="logo">Peliluola</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
                     <li><a href="number-game.html">Number Game</a></li>
                     <li><a href="memory-game.html">Memory Game</a></li>
-                    <li><a href="speed-game.html">Speed Game</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,20 +24,20 @@
     <main>
         <section class="games">
             <div class="container">
-                <h1>Choose Your Game</h1>
+                <h1>Number Guessing Game</h1>
 
+                <!-- Number Guessing Game -->
                 <div class="game-container">
-                    <!-- Game Selection Cards -->
                     <div class="game-card">
-                        <h3>Number Guessing Game</h3>
+                        <h3>Guess the number</h3>
                         <p>Guess the number between 1 and 100</p>
-                        <a href="number-game.html" class="game-button">Play Now</a>
-                    </div>
-
-                    <div class="game-card">
-                        <h3>Memory Match Game</h3>
-                        <p>Match pairs of cards</p>
-                        <a href="memory-game.html" class="game-button">Play Now</a>
+                        <div class="game-content">
+                            <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100">
+                            <button onclick="submitGuess()" class="game-button">Submit Guess</button>
+                            <p id="guessMessage" class="game-message"></p>
+                            <p id="attemptsDisplay" class="attempts"></p>
+                            <button onclick="resetGuessGame()" class="game-button secondary">New Game</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <p>&copy; 2025 Peliluola. All rights reserved.</p>
         </div>
     </footer>
 

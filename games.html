@@ -12,19 +12,19 @@
             <div class="container">
                 <div class="logo">Peliluola</div>
                 <ul class="nav-links">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#number-game">Number Game</a></li>
+                    <li><a href="#memory-game">Memory Game</a></li>
+                    <li><a href="#speed-game">Speed Game</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="games">
+        <section id="number-game" class="games">
             <div class="container">
-                <h1>Play Games</h1>
+                <h1>Number Guessing Game</h1>
                 
                 <!-- Number Guessing Game -->
                 <div class="game-container">
@@ -39,8 +39,16 @@
                             <button onclick="resetGuessGame()" class="game-button secondary">New Game</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Memory Match Game -->
+        <section id="memory-game" class="games">
+            <div class="container">
+                <h1>Memory Match Game</h1>
+                
+                <!-- Memory Match Game -->
+                <div class="game-container">
                     <div class="game-card">
                         <h3>Memory Match Game</h3>
                         <p>Match pairs of cards</p>
@@ -50,8 +58,16 @@
                             <button onclick="resetMemoryGame()" class="game-button">New Game</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Speed Click Game -->
+        <section id="speed-game" class="games">
+            <div class="container">
+                <h1>Speed Click Game</h1>
+                
+                <!-- Speed Click Game -->
+                <div class="game-container">
                     <div class="game-card">
                         <h3>Speed Click Game</h3>
                         <p>Click 10 boxes as fast as you can!</p>
